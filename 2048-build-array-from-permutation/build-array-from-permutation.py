@@ -4,9 +4,16 @@ class Solution(object):
         :type nums: List[int]
         :rtype: List[int]
         """
-        # ans=[0 for i in range(len(nums))]
-        ans=[]
+        
+        # ans=[]
 
+        # for i in range(len(nums)):
+        #     ans.append(nums[nums[i]])
+        # return ans
+
+        ans=[i for i in range(len(nums))]
         for i in range(len(nums)):
-            ans.append(nums[nums[i]])
+            ans[i] = nums[nums[i]]
         return ans
+
+
