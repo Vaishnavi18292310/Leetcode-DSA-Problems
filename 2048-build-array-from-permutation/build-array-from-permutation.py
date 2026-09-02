@@ -11,7 +11,12 @@ class Solution(object):
         #     ans.append(nums[nums[i]])
         # return ans
 
-        ans=[i for i in range(len(nums))]
+        # ans=[i for i in range(len(nums))]
+        # for i in range(len(nums)):
+        #     ans[i] = nums[nums[i]]
+        # return ans
+
+        ans=[0 for i in range(len(nums))]
         for i in range(len(nums)):
             ans[i] = nums[nums[i]]
         return ans
